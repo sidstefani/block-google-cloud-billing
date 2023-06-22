@@ -5,6 +5,7 @@ view: +gcp_billing_export {
 
   parameter: period {
     label: "Timeframe"
+    hidden: yes
     view_label: "Period over Period"
     type: unquoted
     allowed_value: {
@@ -31,7 +32,7 @@ view: +gcp_billing_export {
     view_label: "Period over Period"
     datatype: date
     type: date
-    hidden: no
+    hidden: yes
     sql: DATE_TRUNC(CURRENT_DATE(), {% parameter period %});;
   }
 
@@ -39,7 +40,7 @@ view: +gcp_billing_export {
   dimension: days_in_period {
     view_label: "Period over Period"
     type: number
-    hidden: no
+    hidden: yes
     sql: DATE_DIFF(CURRENT_DATE(),${first_date_in_period}, DAY) ;;
   }
 
@@ -48,7 +49,7 @@ view: +gcp_billing_export {
     view_label: "Period over Period"
     datatype: date
     type: date
-    hidden: no
+    hidden: yes
     sql: DATE_TRUNC(DATE_ADD(CURRENT_DATE(), INTERVAL -1 {% parameter period %}),{% parameter period %});;
   }
 
@@ -57,7 +58,7 @@ view: +gcp_billing_export {
     datatype: date
     view_label: "Period over Period"
     type: date
-    hidden: no
+    hidden: yes
     sql: DATE_ADD(${first_date_in_prior_period}, INTERVAL ${days_in_period} DAY) ;;
   }
 
@@ -65,6 +66,7 @@ view: +gcp_billing_export {
   dimension: period_selected {
     view_label: "Period over Period"
     type: string
+    hidden: yes
     sql:
         CASE
           WHEN ${gcp_billing_export.usage_start_date} >=  ${first_date_in_period}
@@ -80,6 +82,7 @@ view: +gcp_billing_export {
   dimension: days_from_period_start {
     view_label: "Period over Period"
     type: number
+    hidden: yes
     sql: CASE WHEN ${period_selected} = 'This {% parameter period %} to Date'
           THEN DATE_DIFF(${gcp_billing_export.usage_start_date}, ${first_date_in_period}, DAY)
           WHEN ${period_selected} = 'Prior {% parameter period %} to Date'
