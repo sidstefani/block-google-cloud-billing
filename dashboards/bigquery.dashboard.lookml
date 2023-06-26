@@ -507,7 +507,7 @@
     title_hidden: true
     listen:
       Project ID: gcp_billing_export.project__id
-    row: 35
+    row: 34
     col: 0
     width: 24
     height: 6
@@ -515,12 +515,12 @@
     type: text
     title_text: ''
     subtitle_text: ''
-    body_text: '[{"type":"h1","children":[{"text":"BigQuery SKUs Month Over Month"}],"align":"center"}]'
+    body_text: '[{"type":"h2","children":[{"text":"BigQuery SKUs Month Over Month"}],"align":"center"}]'
     rich_content_json: '{"format":"slate"}'
     row: 33
     col: 0
     width: 24
-    height: 2
+    height: 1
   filters:
   - name: Project ID
     title: Project ID
