@@ -44,7 +44,10 @@
     y_axis_combined: true
     show_null_points: true
     interpolation: linear
-    y_axes: []
+    y_axes: [{label: Usage, orientation: left, series: [{axisId: gcp_billing_export.usage__amount_in_calculated_units,
+            id: gcp_billing_export.usage__amount_in_calculated_units, name: Usage
+              Amount In Calculated Units}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
     custom_color_enabled: true
@@ -104,7 +107,10 @@
     y_axis_combined: true
     show_null_points: true
     interpolation: linear
-    y_axes: []
+    y_axes: [{label: Usage, orientation: left, series: [{axisId: gcp_billing_export.usage__amount_in_calculated_units,
+            id: gcp_billing_export.usage__amount_in_calculated_units, name: Usage
+              Amount In Calculated Units}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
     custom_color_enabled: true
@@ -172,7 +178,10 @@
     y_axis_combined: true
     show_null_points: true
     interpolation: linear
-    y_axes: []
+    y_axes: [{label: Usage, orientation: left, series: [{axisId: gcp_billing_export.usage__amount_in_calculated_units,
+            id: gcp_billing_export.usage__amount_in_calculated_units, name: Usage
+              Amount In Calculated Units}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
     custom_color_enabled: true
@@ -249,7 +258,10 @@
     y_axis_combined: true
     show_null_points: true
     interpolation: linear
-    y_axes: []
+    y_axes: [{label: Usage, orientation: left, series: [{axisId: gcp_billing_export.usage__amount_in_calculated_units,
+            id: gcp_billing_export.usage__amount_in_calculated_units, name: Usage
+              Amount In Calculated Units}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
     custom_color_enabled: true
@@ -336,7 +348,11 @@
     show_totals_labels: true
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: []
+    y_axes: [{label: '', orientation: left, series: [{axisId: gcp_billing_export.total_cud_cost,
+            id: gcp_billing_export.total_cud_cost, name: Total CUD Cost}, {axisId: gcp_billing_export.total_non_cud_cost,
+            id: gcp_billing_export.total_non_cud_cost, name: Total Non CUD Cost}],
+        showLabels: true, showValues: true, valueFormat: "$###,##0", unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
     hidden_series: [gcp_billing_export.total_cost]
@@ -495,7 +511,11 @@
     show_totals_labels: true
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: []
+    y_axes: [{label: '', orientation: left, series: [{axisId: gcp_billing_export.total_cud_cost,
+            id: gcp_billing_export.total_cud_cost, name: Total CUD Cost}, {axisId: gcp_billing_export.total_non_cud_cost,
+            id: gcp_billing_export.total_non_cud_cost, name: Total Non CUD Cost}],
+        showLabels: true, showValues: true, valueFormat: "$###,##0", unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
     hidden_series: [gcp_billing_export.total_cost]
@@ -576,7 +596,11 @@
     show_totals_labels: true
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: []
+    y_axes: [{label: '', orientation: left, series: [{axisId: gcp_billing_export.total_cud_cost,
+            id: gcp_billing_export.total_cud_cost, name: Total CUD Cost}, {axisId: gcp_billing_export.total_non_cud_cost,
+            id: gcp_billing_export.total_non_cud_cost, name: Total Non CUD Cost}],
+        showLabels: true, showValues: true, valueFormat: "$###,##0", unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
     hidden_series: [gcp_billing_export.total_cost]
@@ -657,7 +681,11 @@
     show_totals_labels: true
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: []
+    y_axes: [{label: '', orientation: left, series: [{axisId: gcp_billing_export.total_cud_cost,
+            id: gcp_billing_export.total_cud_cost, name: Total CUD Cost}, {axisId: gcp_billing_export.total_non_cud_cost,
+            id: gcp_billing_export.total_non_cud_cost, name: Total Non CUD Cost}],
+        showLabels: true, showValues: true, valueFormat: "$###,##0", unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
     hidden_series: [gcp_billing_export.total_cost]
@@ -937,6 +965,11 @@
       type: advanced
       display: popover
       options: []
+    model: gcp_billing_block
+    explore: gcp_billing_export
+    listens_to_filters: []
+    field: gcp_billing_export.usage_start_date
+
     model: gcp_billing_block
     explore: gcp_billing_export
     listens_to_filters: []
