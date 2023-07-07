@@ -47,7 +47,6 @@
     y_axes: []
     x_axis_zoom: true
     y_axis_zoom: true
-    series_types: {}
     custom_color_enabled: true
     show_single_value_title: true
     show_comparison: false
@@ -63,7 +62,6 @@
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 2
     col: 0
     width: 9
@@ -83,6 +81,7 @@
       pricing.pricing_type: Cores%
     sorts: [pricing.pricing_usage_type, gcp_billing_export.usage_start_month desc]
     limit: 500
+    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -107,7 +106,7 @@
     y_axis_combined: true
     ordering: none
     show_null_labels: false
-    show_totals_labels: false
+    show_totals_labels: true
     show_silhouette: false
     totals_color: "#808080"
     y_axes: [{label: '', orientation: left, series: [{axisId: gcp_billing_export.total_cost,
@@ -118,7 +117,7 @@
     x_axis_zoom: true
     y_axis_zoom: true
     hidden_series: []
-    series_types: {}
+    label_value_format: "$###,##0"
     show_null_points: true
     interpolation: linear
     custom_color_enabled: true
@@ -136,7 +135,6 @@
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 2
     col: 9
     width: 15
@@ -171,12 +169,10 @@
     rows_font_size: 12
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    series_types: {}
     defaults_version: 1
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 9
     col: 0
     width: 24
@@ -230,11 +226,9 @@
     defaults_version: 1
     hidden_fields: []
     y_axes: []
-    series_types: {}
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 0
     col: 19
     width: 5
@@ -262,6 +256,7 @@
       pricing.pricing_type: RAM%
     sorts: [pricing.pricing_usage_type, gcp_billing_export.usage_start_month desc]
     limit: 500
+    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -286,13 +281,13 @@
     y_axis_combined: true
     ordering: none
     show_null_labels: false
-    show_totals_labels: false
+    show_totals_labels: true
     show_silhouette: false
     totals_color: "#808080"
     y_axes: []
     x_axis_zoom: true
     y_axis_zoom: true
-    series_types: {}
+    label_value_format: "$###,##0"
     show_null_points: true
     interpolation: linear
     custom_color_enabled: true
@@ -310,7 +305,6 @@
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 17
     col: 9
     width: 15
@@ -345,12 +339,10 @@
     rows_font_size: 12
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    series_types: {}
     defaults_version: 1
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 24
     col: 0
     width: 24
@@ -412,11 +404,9 @@
     defaults_version: 1
     hidden_fields: []
     y_axes: []
-    series_types: {}
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 15
     col: 19
     width: 5
@@ -463,7 +453,6 @@
     y_axes: []
     x_axis_zoom: true
     y_axis_zoom: true
-    series_types: {}
     custom_color_enabled: true
     show_single_value_title: true
     show_comparison: false
@@ -479,7 +468,6 @@
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 17
     col: 0
     width: 9
@@ -523,13 +511,11 @@
     series_text_format:
       gcp_billing_export.total_cost:
         align: center
-    series_types: {}
     defaults_version: 1
     title_hidden: true
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 32
     col: 0
     width: 11
@@ -552,6 +538,7 @@
     sorts: [gcp_billing_export.sku__description, gcp_billing_export.total_cost desc
         0]
     limit: 500
+    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -576,12 +563,12 @@
     y_axis_combined: true
     ordering: none
     show_null_labels: false
-    show_totals_labels: false
+    show_totals_labels: true
     show_silhouette: false
     totals_color: "#808080"
     x_axis_zoom: true
     y_axis_zoom: true
-    series_types: {}
+    label_value_format: "$###,##0"
     series_colors:
       Snapshot - gcp_billing_export.total_cost: "#5A6874"
       SSD Capacity - gcp_billing_export.total_cost: "#3CC8FF"
@@ -614,7 +601,6 @@
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 32
     col: 11
     width: 13
@@ -668,11 +654,9 @@
     defaults_version: 1
     hidden_fields: []
     y_axes: []
-    series_types: {}
     listen:
       Project ID: gcp_billing_export.project__id
       Usage Start Date: gcp_billing_export.usage_start_date
-      Machine Type: gcp_billing_export.machine_type
     row: 30
     col: 19
     width: 5
@@ -701,12 +685,19 @@
     sorts: [pricing.pricing_usage_type]
     limit: 500
     column_limit: 50
-    dynamic_fields: [{args: [gcp_billing_export.usage__amount_in_calculated_units],
-        calculation_type: percent_of_previous, category: table_calculation, based_on: gcp_billing_export.usage__amount_in_calculated_units,
-        label: Percent of previous - Billing Usage Amount In Calculated Units, source_field: gcp_billing_export.usage__amount_in_calculated_units,
-        table_calculation: percent_of_previous_billing_usage_amount_in_calculated_units,
-        value_format: !!null '', value_format_name: percent_0, _kind_hint: measure,
-        _type_hint: number}]
+    dynamic_fields:
+    - args:
+      - gcp_billing_export.usage__amount_in_calculated_units
+      calculation_type: percent_of_previous
+      category: table_calculation
+      based_on: gcp_billing_export.usage__amount_in_calculated_units
+      label: Percent of previous - Billing Usage Amount In Calculated Units
+      source_field: gcp_billing_export.usage__amount_in_calculated_units
+      table_calculation: percent_of_previous_billing_usage_amount_in_calculated_units
+      value_format:
+      value_format_name: percent_0
+      _kind_hint: measure
+      _type_hint: number
     custom_color_enabled: true
     show_single_value_title: true
     show_comparison: false
@@ -749,13 +740,11 @@
     x_axis_zoom: true
     y_axis_zoom: true
     label_value_format: "#,##0"
-    series_types: {}
     defaults_version: 1
     hidden_fields: [gcp_billing_export.usage__amount_in_calculated_units]
     hidden_pivots: {}
     listen:
       Project ID: gcp_billing_export.project__id
-      Machine Type: gcp_billing_export.machine_type
       Usage Start Date: gcp_billing_export.usage_start_date
     row: 0
     col: 14
@@ -777,12 +766,19 @@
     sorts: [pricing.pricing_usage_type]
     limit: 500
     column_limit: 50
-    dynamic_fields: [{args: [gcp_billing_export.usage__amount_in_calculated_units],
-        calculation_type: percent_of_previous, category: table_calculation, based_on: gcp_billing_export.usage__amount_in_calculated_units,
-        label: Percent of previous - Billing Usage Amount In Calculated Units, source_field: gcp_billing_export.usage__amount_in_calculated_units,
-        table_calculation: percent_of_previous_billing_usage_amount_in_calculated_units,
-        value_format: !!null '', value_format_name: percent_0, _kind_hint: measure,
-        _type_hint: number}]
+    dynamic_fields:
+    - args:
+      - gcp_billing_export.usage__amount_in_calculated_units
+      calculation_type: percent_of_previous
+      category: table_calculation
+      based_on: gcp_billing_export.usage__amount_in_calculated_units
+      label: Percent of previous - Billing Usage Amount In Calculated Units
+      source_field: gcp_billing_export.usage__amount_in_calculated_units
+      table_calculation: percent_of_previous_billing_usage_amount_in_calculated_units
+      value_format:
+      value_format_name: percent_0
+      _kind_hint: measure
+      _type_hint: number
     custom_color_enabled: true
     show_single_value_title: true
     show_comparison: false
@@ -825,13 +821,11 @@
     x_axis_zoom: true
     y_axis_zoom: true
     label_value_format: "#,##0"
-    series_types: {}
     defaults_version: 1
     hidden_fields: [gcp_billing_export.usage__amount_in_calculated_units]
     hidden_pivots: {}
     listen:
       Project ID: gcp_billing_export.project__id
-      Machine Type: gcp_billing_export.machine_type
       Usage Start Date: gcp_billing_export.usage_start_date
     row: 15
     col: 14
@@ -852,12 +846,19 @@
     sorts: [pricing.pricing_usage_type]
     limit: 500
     column_limit: 50
-    dynamic_fields: [{args: [gcp_billing_export.usage__amount_in_calculated_units],
-        calculation_type: percent_of_previous, category: table_calculation, based_on: gcp_billing_export.usage__amount_in_calculated_units,
-        label: Percent of previous - Billing Usage Amount In Calculated Units, source_field: gcp_billing_export.usage__amount_in_calculated_units,
-        table_calculation: percent_of_previous_billing_usage_amount_in_calculated_units,
-        value_format: !!null '', value_format_name: percent_0, _kind_hint: measure,
-        _type_hint: number}]
+    dynamic_fields:
+    - args:
+      - gcp_billing_export.usage__amount_in_calculated_units
+      calculation_type: percent_of_previous
+      category: table_calculation
+      based_on: gcp_billing_export.usage__amount_in_calculated_units
+      label: Percent of previous - Billing Usage Amount In Calculated Units
+      source_field: gcp_billing_export.usage__amount_in_calculated_units
+      table_calculation: percent_of_previous_billing_usage_amount_in_calculated_units
+      value_format:
+      value_format_name: percent_0
+      _kind_hint: measure
+      _type_hint: number
     custom_color_enabled: true
     show_single_value_title: true
     show_comparison: false
@@ -900,13 +901,11 @@
     x_axis_zoom: true
     y_axis_zoom: true
     label_value_format: "#,##0"
-    series_types: {}
     defaults_version: 1
     hidden_fields: [gcp_billing_export.usage__amount_in_calculated_units]
     hidden_pivots: {}
     listen:
       Project ID: gcp_billing_export.project__id
-      Machine Type: gcp_billing_export.machine_type
       Usage Start Date: gcp_billing_export.usage_start_date
     row: 30
     col: 14
@@ -926,19 +925,6 @@
     explore: gcp_billing_export
     listens_to_filters: []
     field: gcp_billing_export.project__id
-  - name: Machine Type
-    title: Machine Type
-    type: field_filter
-    default_value: ''
-    allow_multiple_values: true
-    required: false
-    ui_config:
-      type: advanced
-      display: popover
-    model: gcp_billing_block
-    explore: gcp_billing_export
-    listens_to_filters: []
-    field: gcp_billing_export.machine_type
   - name: Usage Start Date
     title: Usage Start Date
     type: field_filter
