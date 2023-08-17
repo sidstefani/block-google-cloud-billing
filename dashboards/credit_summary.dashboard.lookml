@@ -3,7 +3,6 @@
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: T6FtNbyf9ZMPMUSKC9NrGH
   elements:
   - title: MTD Credit Amount
     name: MTD Credit Amount
