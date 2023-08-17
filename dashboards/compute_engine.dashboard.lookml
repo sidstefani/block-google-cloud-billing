@@ -3,7 +3,6 @@
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: ITQE1AByViz7vMNsKYmnfC
   elements:
   - name: 'Cores: Usage and Cost Insights'
     type: text
