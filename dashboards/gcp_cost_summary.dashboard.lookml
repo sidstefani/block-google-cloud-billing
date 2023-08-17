@@ -3,7 +3,6 @@
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: 6dbjXp0ah43jfdioKunIn8
   elements:
   - title: YTD Costs
     name: YTD Costs
