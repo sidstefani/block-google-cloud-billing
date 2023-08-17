@@ -3,7 +3,6 @@
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: woUQI33YbnkmmVk42VDUBX
   elements:
   - name: <strong><font color="#000000 " size="6" weight="bold">Cloud Storage Cost
       Insights</font><strong>
