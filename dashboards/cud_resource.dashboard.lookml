@@ -3,7 +3,6 @@
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: jhpkepwxFdSfchtQAJxrzJ
   elements:
   - title: Cores Usage Insights
     name: Cores Usage Insights
