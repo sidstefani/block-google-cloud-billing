@@ -3,7 +3,6 @@
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: ZjeQkqauEMDJ7A1LwAycWI
   elements:
   - title: GKE Commitment Usage
     name: GKE Commitment Usage
