@@ -3,7 +3,6 @@
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: RSxfRvvLyuw6rwLLZBmqBe
   elements:
   - title: Current Month
     name: Current Month
