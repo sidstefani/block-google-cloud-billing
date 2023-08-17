@@ -3,7 +3,6 @@
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: GdDgDp3IJNdsev47EYBA0u
   elements:
   - name: 'Analysis: Usage and Cost Insights'
     type: text
